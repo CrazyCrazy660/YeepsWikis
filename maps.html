@@ -9,12 +9,7 @@
 <body>
   <header>
     <div class="search-container">
-      <input 
-        type="text" 
-        id="siteSearch" 
-        placeholder="Search maps..." 
-        onkeyup="filterSite(this.value)"
-      >
+      <input type="text" id="siteSearch" placeholder="Search maps..." onkeyup="filterSite(this.value)">
     </div>
   </header>
 
@@ -23,13 +18,21 @@
     <p class="searchable">Explore all maps available in Yeeps Hide and Seek.</p>
 
     <ul>
-      <li class="searchable">Forest</li>
-      <li class="searchable">Caves</li>
-      <li class="searchable">City</li>
+      <li class="searchable">
+        Forest  
+        <img src="images/forest-map.png" alt="Forest Map" style="max-width:300px;display:block;margin-top:10px;">
+      </li>
+      <li class="searchable">
+        Caves  
+        <img src="images/caves-map.png" alt="Caves Map" style="max-width:300px;display:block;margin-top:10px;">
+      </li>
+      <li class="searchable">
+        City  
+        <img src="images/city-map.png" alt="City Map" style="max-width:300px;display:block;margin-top:10px;">
+      </li>
     </ul>
   </main>
 
   <script src="search.js"></script>
 </body>
 </html>
-
