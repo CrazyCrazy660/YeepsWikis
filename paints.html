@@ -9,25 +9,28 @@
 <body>
   <header>
     <div class="search-container">
-      <input 
-        type="text" 
-        id="siteSearch" 
-        placeholder="Search paints..." 
-        onkeyup="filterSite(this.value)"
-      >
+      <input type="text" id="siteSearch" placeholder="Search paints..." onkeyup="filterSite(this.value)">
     </div>
   </header>
 
   <main>
     <h1 class="searchable">Paints</h1>
     <ul>
-      <li class="searchable">Red Paint</li>
-      <li class="searchable">Blue Paint</li>
-      <li class="searchable">Glow Paint</li>
+      <li class="searchable">
+        Red Paint  
+        <img src="images/red-paint.png" alt="Red Paint" style="max-width:200px;display:block;margin-top:10px;">
+      </li>
+      <li class="searchable">
+        Blue Paint  
+        <img src="images/blue-paint.png" alt="Blue Paint" style="max-width:200px;display:block;margin-top:10px;">
+      </li>
+      <li class="searchable">
+        Glow Paint  
+        <img src="images/glow-paint.png" alt="Glow Paint" style="max-width:200px;display:block;margin-top:10px;">
+      </li>
     </ul>
   </main>
 
   <script src="search.js"></script>
 </body>
 </html>
-
