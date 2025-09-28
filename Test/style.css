@@ -1,22 +1,26 @@
-/* General page styling */
+/* =======================
+   Global Page Styling
+======================= */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #0b1a3c; /* dark blue background */
+  background-color: #0b1a3c; /* Dark blue background */
   color: #f0f0f0;
+  line-height: 1.6;
 }
 
-/* Header styling */
+/* =======================
+   Header + Search
+======================= */
 header {
   background-color: #111d47;
-  padding: 10px;
+  padding: 12px;
   position: sticky;
   top: 0;
   z-index: 1000;
 }
 
-/* Search box */
 .search-container {
   display: flex;
   justify-content: center;
@@ -24,38 +28,53 @@ header {
 }
 
 .search-container input {
-  padding: 8px;
+  padding: 8px 12px;
   width: 60%;
   border: none;
   border-radius: 5px;
   font-size: 16px;
+  text-align: center;
 }
 
-/* Main content */
+/* =======================
+   Main Content
+======================= */
 main {
   padding: 20px;
 }
 
-/* Headings */
 h1, h2 {
   color: #ffffff;
   text-align: center;
+  margin-bottom: 20px;
 }
 
-/* Lists */
+/* =======================
+   Lists + Items
+======================= */
 ul {
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 
 li {
   margin: 15px 0;
   background-color: #1a2b55;
-  padding: 10px;
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center; /* centers text in list items */
+}
+
+li img {
+  margin-top: 10px;
+  max-width: 100%;
   border-radius: 5px;
 }
 
-/* Links */
+/* =======================
+   Links
+======================= */
 a {
   color: #4aa8ff;
   text-decoration: none;
@@ -65,12 +84,26 @@ a:hover {
   text-decoration: underline;
 }
 
-/* Buttons */
-button {
-  display: flex;
-  justify-content: center;   /* centers text horizontally */
-  align-items: center;       /* centers text vertically */
+/* Button-like Links */
+a.button-link {
+  display: inline-block;
+  background-color: #1f3a77;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
   text-align: center;
+  margin-top: 10px;
+}
+
+a.button-link:hover {
+  background-color: #2d4fa3;
+}
+
+/* =======================
+   Buttons
+======================= */
+button {
+  display: inline-block;
   padding: 10px 15px;
   background-color: #1f3a77;
   color: white;
@@ -78,8 +111,15 @@ button {
   border-radius: 5px;
   cursor: pointer;
   font-size: 16px;
+  text-align: center;   /* centers text horizontally */
+  line-height: normal;  /* makes vertical centering consistent */
 }
 
 button:hover {
   background-color: #2d4fa3;
 }
+
+/* =======================
+   Images
+======================= */
+img {
