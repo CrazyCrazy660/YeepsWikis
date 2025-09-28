@@ -1,87 +1,125 @@
-/* ========== General Page Styles ========== */
+/* =======================
+   Global Page Styling
+======================= */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #0d1b2a; /* dark blue background */
-  color: #e0e1dd; /* light gray text */
+  background-color: #0b1a3c; /* Dark blue background */
+  color: #f0f0f0;
+  line-height: 1.6;
 }
 
-main {
-  padding: 20px;
-  max-width: 900px;
-  margin: auto;
+/* =======================
+   Header + Search
+======================= */
+header {
+  background-color: #111d47;
+  padding: 12px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
-h1, h2, h3 {
-  color: #ffffff;
-  text-align: center;
-}
-
-/* ========== Search Bar ========== */
 .search-container {
-  width: 100%;
-  padding: 15px;
-  background: #1b263b; /* slightly lighter blue */
   display: flex;
   justify-content: center;
-  border-bottom: 2px solid #415a77;
+  align-items: center;
 }
 
 .search-container input {
-  width: 80%;
-  max-width: 500px;
-  padding: 10px;
+  padding: 8px 12px;
+  width: 60%;
   border: none;
   border-radius: 5px;
   font-size: 16px;
-  background: #415a77;
-  color: white;
-}
-
-.search-container input::placeholder {
-  color: #e0e1dd;
-}
-
-/* ========== Hero Banner ========== */
-.hero-banner img {
-  width: 100%;
-  height: auto;
-  display: block;
-  border-bottom: 3px solid #415a77;
-}
-
-/* ========== Buttons (Links Styled as Buttons) ========== */
-a {
-  display: inline-block;
-  padding: 12px 20px;
-  margin: 5px 0;
   text-align: center;
-  text-decoration: none;
-  background: #1a3a6d; /* dark blue button */
-  color: white;
-  border-radius: 6px;
-  font-weight: bold;
-  width: 220px; /* keeps buttons same size */
-  transition: background 0.3s ease;
 }
 
-a:hover {
-  background: #2d5ba6; /* lighter on hover */
+/* =======================
+   Main Content
+======================= */
+main {
+  padding: 20px;
 }
 
-/* ========== Lists ========== */
+h1, h2 {
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* =======================
+   Lists + Items
+======================= */
 ul {
+  list-style: none;
   padding: 0;
+  margin: 0;
 }
 
 li {
-  list-style: none;
   margin: 15px 0;
+  background-color: #1a2b55;
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center; /* centers text in list items */
 }
 
-/* ========== Images ========== */
-img {
-  border-radius: 6px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+li img {
+  margin-top: 10px;
+  max-width: 100%;
+  border-radius: 5px;
 }
+
+/* =======================
+   Links
+======================= */
+a {
+  color: #4aa8ff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Button-like Links */
+a.button-link {
+  display: inline-block;
+  background-color: #1f3a77;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+a.button-link:hover {
+  background-color: #2d4fa3;
+}
+
+/* =======================
+   Buttons
+======================= */
+button {
+  display: inline-block;
+  padding: 10px 15px;
+  background-color: #1f3a77;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  text-align: center;   /* centers text horizontally */
+  line-height: normal;  /* makes vertical centering consistent */
+}
+
+button:hover {
+  background-color: #2d4fa3;
+}
+
+/* =======================
+   Images
+======================= */
+img {
