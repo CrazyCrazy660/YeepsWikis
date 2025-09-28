@@ -1,14 +1,13 @@
-/* === General page styling === */
+/* General page styling */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
   background-color: #0b1a3c; /* dark blue background */
   color: #f0f0f0;
-  line-height: 1.6;
 }
 
-/* === Header styling === */
+/* Header styling */
 header {
   background-color: #111d47;
   padding: 10px;
@@ -17,7 +16,7 @@ header {
   z-index: 1000;
 }
 
-/* === Search box === */
+/* Search box */
 .search-container {
   display: flex;
   justify-content: center;
@@ -32,36 +31,31 @@ header {
   font-size: 16px;
 }
 
-/* === Main content === */
+/* Main content */
 main {
   padding: 20px;
-  max-width: 900px;
-  margin: auto;
 }
 
-/* === Headings === */
+/* Headings */
 h1, h2 {
   color: #ffffff;
   text-align: center;
-  margin-top: 20px;
-  margin-bottom: 20px;
 }
 
-/* === Lists === */
+/* Lists */
 ul {
   list-style: none;
   padding: 0;
 }
 
 li {
-  margin: 20px 0;
+  margin: 15px 0;
   background-color: #1a2b55;
-  padding: 15px;
-  border-radius: 8px;
-  text-align: center;
+  padding: 10px;
+  border-radius: 5px;
 }
 
-/* === Links === */
+/* Links */
 a {
   color: #4aa8ff;
   text-decoration: none;
@@ -71,35 +65,21 @@ a:hover {
   text-decoration: underline;
 }
 
-/* === Buttons === */
-button, 
-.btn-link { /* .btn-link makes <a> act like a button */
+/* Buttons */
+button {
   display: flex;
-  justify-content: center;   /* center text horizontally */
-  align-items: center;       /* center text vertically */
+  justify-content: center;   /* centers text horizontally */
+  align-items: center;       /* centers text vertically */
   text-align: center;
-  padding: 12px 20px;
+  padding: 10px 15px;
   background-color: #1f3a77;
   color: white;
   border: none;
-  border-radius: 6px;
+  border-radius: 5px;
   cursor: pointer;
   font-size: 16px;
-  font-weight: bold;
-  text-decoration: none; /* remove underline from <a> */
-  transition: background-color 0.3s ease;
-  margin: 10px auto;
 }
 
-button:hover, 
-.btn-link:hover {
+button:hover {
   background-color: #2d4fa3;
-}
-
-/* === Images inside lists === */
-li img {
-  max-width: 300px;
-  display: block;
-  margin: 15px auto 0 auto;
-  border-radius: 6px;
 }
