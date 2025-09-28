@@ -1,82 +1,7 @@
-/* === General page styling === */
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #0b1a3c; /* dark blue background */
-  color: #f0f0f0;
-  line-height: 1.6;
-}
-
-/* === Header styling === */
-header {
-  background-color: #111d47;
-  padding: 10px;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-}
-
-/* === Search box === */
-.search-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.search-container input {
-  padding: 8px;
-  width: 60%;
-  border: none;
-  border-radius: 5px;
-  font-size: 16px;
-}
-
-/* === Main content === */
-main {
-  padding: 20px;
-  max-width: 900px;
-  margin: auto;
-}
-
-/* === Headings === */
-h1, h2 {
-  color: #ffffff;
-  text-align: center;
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-
-/* === Lists === */
-ul {
-  list-style: none;
-  padding: 0;
-}
-
-li {
-  margin: 20px 0;
-  background-color: #1a2b55;
-  padding: 15px;
-  border-radius: 8px;
-  text-align: center;
-}
-
-/* === Links === */
-a {
-  color: #4aa8ff;
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
 /* === Buttons === */
 button, 
 .btn-link { /* .btn-link makes <a> act like a button */
-  display: flex;
-  justify-content: center;   /* center text horizontally */
-  align-items: center;       /* center text vertically */
+  display: inline-block;   /* makes the whole button clickable */
   text-align: center;
   padding: 12px 20px;
   background-color: #1f3a77;
@@ -94,12 +19,4 @@ button,
 button:hover, 
 .btn-link:hover {
   background-color: #2d4fa3;
-}
-
-/* === Images inside lists === */
-li img {
-  max-width: 300px;
-  display: block;
-  margin: 15px auto 0 auto;
-  border-radius: 6px;
 }
