@@ -1,125 +1,82 @@
-/* =======================
-   Global Page Styling
-======================= */
+/* General Styles */
 body {
-  font-family: Arial, sans-serif;
   margin: 0;
-  padding: 0;
-  background-color: #0b1a3c; /* Dark blue background */
-  color: #f0f0f0;
+  font-family: Arial, sans-serif;
+  background-color: #0a1a2f; /* dark blue background */
+  color: white;
   line-height: 1.6;
 }
 
-/* =======================
-   Header + Search
-======================= */
 header {
-  background-color: #111d47;
-  padding: 12px;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-}
-
-.search-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.search-container input {
-  padding: 8px 12px;
-  width: 60%;
-  border: none;
-  border-radius: 5px;
-  font-size: 16px;
+  background-color: #112240;
   text-align: center;
-}
-
-/* =======================
-   Main Content
-======================= */
-main {
   padding: 20px;
 }
 
-h1, h2 {
-  color: #ffffff;
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-/* =======================
-   Lists + Items
-======================= */
-ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-li {
-  margin: 15px 0;
-  background-color: #1a2b55;
-  padding: 15px;
-  border-radius: 8px;
-  text-align: center; /* centers text in list items */
-}
-
-li img {
-  margin-top: 10px;
+header img {
   max-width: 100%;
-  border-radius: 5px;
+  height: auto;
 }
 
-/* =======================
-   Links
-======================= */
-a {
-  color: #4aa8ff;
+nav {
+  background-color: #1b2d50;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: white;
+  margin: 5px 15px;
   text-decoration: none;
+  font-weight: bold;
 }
 
-a:hover {
+nav a:hover {
   text-decoration: underline;
 }
 
-/* Button-like Links */
-a.button-link {
-  display: inline-block;
-  background-color: #1f3a77;
-  color: white;
-  padding: 10px 15px;
-  border-radius: 5px;
+.container {
+  width: 80%;
+  margin: auto;
+  padding: 20px;
+}
+
+/* Search box */
+.search-box {
   text-align: center;
-  margin-top: 10px;
+  margin: 20px 0;
 }
 
-a.button-link:hover {
-  background-color: #2d4fa3;
-}
-
-/* =======================
-   Buttons
-======================= */
-button {
-  display: inline-block;
-  padding: 10px 15px;
-  background-color: #1f3a77;
-  color: white;
-  border: none;
+.search-box input {
+  width: 50%;
+  padding: 8px;
   border-radius: 5px;
-  cursor: pointer;
-  font-size: 16px;
-  text-align: center;   /* centers text horizontally */
-  line-height: normal;  /* makes vertical centering consistent */
+  border: none;
 }
 
-button:hover {
-  background-color: #2d4fa3;
+/* Map images - CENTERED */
+.map-image {
+  display: block;
+  margin: 20px auto; /* centers the image */
+  max-width: 80%; /* keeps it responsive */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 }
 
-/* =======================
-   Images
-======================= */
-img {
+/* Buttons */
+.button {
+  display: inline-block;
+  background-color: #2e4a7d;
+  color: white;
+  padding: 10px 20px;
+  margin: 10px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.button:hover {
+  background-color: #3e5a9d;
+}
