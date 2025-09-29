@@ -113,3 +113,9 @@ main a {
 main a:hover {
   color: #66ccff;
 }
+
+.container {
+      display: flex; /* Enables Flexbox layout */
+      justify-content: space-between; /* Distributes items with space in between */
+      align-items: center; /* Vertically aligns items in the center (optional) */
+    }
