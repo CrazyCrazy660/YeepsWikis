@@ -1,22 +1,23 @@
 ## Yeeps Wiki
 
-Welcome to the new [Yeeps: Hide and Seek wiki](https://yeepswiki.vercel.app)! We're using **Material for MkDocs** to build a better, more up-to-date wiki
+Welcome to the new [Yeeps: Hide and Seek wiki](https://yeepswiki.vercel.app)! 
 
 ## Status Overview
 We're still setting things up, so here's a quick look at what's done and what still needs work:
 
 | Category             | Status        |
 |----------------------|---------------|
-| **Cooking**          | Completed ✅   |
-| **Brewing**          | Completed ✅   |
+| **Cooking**          | Not started ❌ |
+| **Brewing**          | Not started ❌ |
 | **Blocks**           | Not started ❌ |
 | **Mechanics**        | Not started ❌ |
 | **Gamemodes**        | Not started ❌ |
 | **Buttcoin Stashes** | Not started ❌ |
 | **Promocodes**       | Not started ❌ |
-| **Update History**   | Completed ✅   |
+| **Update History**   | Not started ❌ |
 | **All Items**        | Not started ❌ |
 | **Tech Webs**        | Not started ❌ |
+| **Maps**             | Started     ❌ |
 
 
 ## How to Contribute
@@ -26,29 +27,3 @@ If you'd like to help out, feel free to submit edits or add missing information!
 Here are some basic resources to help get you started
 
 - [Figma](https://www.figma.com/design/VZh6AGHqZt1UacdDRiVuYW/Yeeps%3A-Hide-and-Seek-Public-Assets)
-- [MKDocs](https://www.mkdocs.org/)
-- [Material for MKDocs](https://squidfunk.github.io/mkdocs-material/)
-- [How to submit changes to the repository](https://www.youtube.com/watch?v=8lGpZkjnkt4)
-
-While recommended, a computer/laptop isn't needed to contribute to the wiki. Github offers codespaces, which let you do everything in the cloud
-
-## Getting Started
-To run the wiki locally:
-
-1. Install MkDocs Material, and required plugins:
-   ```sh
-   pip install mkdocs-material \
-   pymdown-extensions \
-   mkdocs-mermaid2-plugin \
-   mkdocs-git-revision-date-localized-plugin \
-   mkdocs-git-committers-plugin-2
-   ```
-2. Clone this repository:
-   ```sh
-   git clone https://github.com/lrutjens/yeeps-wiki.git
-   ```
-3. Navigate to the project folder and start the server:
-   ```sh
-   mkdocs serve
-   ```
-4. Open [`http://127.0.0.1:8000/`](http://127.0.0.1:8000) in your browser to see the wiki in action!
