@@ -1,120 +1,122 @@
-/* Yeeps Hide and Seek Wiki - Style */
-
-/* 🌌 Background and Base Layout */
+/* ===== Global Styles ===== */
 body {
-  background-color: #001f3f; /* Dark blue background */
-  color: #fff;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
-  padding: 0;
+  font-family: "Poppins", sans-serif;
+  background-color: #0a0f2c;
+  color: #ffffff;
+  line-height: 1.6;
 }
 
-/* 🌐 Header Search Bar */
+/* ===== Header ===== */
 header {
-  background-color: #002b5e;
-  padding: 10px;
+  background-color: #11193d;
+  padding: 20px 0;
   text-align: center;
-  position: sticky;
-  top: 0;
-  z-index: 10;
+  color: white;
+}
+
+header img {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  border-bottom: 3px solid #1e2a6d;
+}
+
+header h1 {
+  margin: 10px 0 0;
+  font-size: 2rem;
+  color: #fff;
+}
+
+/* ===== Navigation / Link Bar ===== */
+.navbar {
+  display: flex;
+  justify-content: center;
+  background-color: #10194a;
+  padding: 12px 0;
+  flex-wrap: wrap;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 16px;
+  margin: 4px;
+  background-color: #1a276b;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.navbar a:hover {
+  background-color: #2438a5;
+  transform: translateY(-2px);
+}
+
+/* ===== Search Box ===== */
+.search-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
 }
 
 .search-container input {
-  width: 80%;
-  max-width: 400px;
-  padding: 8px 12px;
-  border-radius: 6px;
+  padding: 10px;
+  width: 60%;
+  border-radius: 8px;
   border: none;
   outline: none;
-  font-size: 16px;
+  font-size: 1rem;
 }
 
-/* 🧭 Main Page Content */
+/* ===== Main Content ===== */
 main {
+  max-width: 900px;
+  margin: auto;
+  background-color: #0f1747;
   padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
 }
 
-/* 🧾 Headings */
-h1, h2, h3 {
-  text-align: center;
-  color: #a8d1ff;
-  margin-bottom: 10px;
-}
-
-/* 🧩 Centered Text Section */
-.centered-text {
-  text-align: center;
-}
-
-/* 🔗 Map Links (for multiple links on one line) */
+/* ===== Map Link Buttons ===== */
 .map-links {
-  text-align: center;
-  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 20px;
 }
 
 .map-links a {
-  display: inline-block;
-  margin: 0 15px;
-  color: #a8d1ff;
   text-decoration: none;
-  font-weight: bold;
-  transition: color 0.3s ease;
+  color: white;
+  background-color: #1a276b;
+  padding: 10px 18px;
+  border-radius: 10px;
+  font-weight: 500;
+  transition: 0.3s;
 }
 
 .map-links a:hover {
-  color: #66b3ff;
-  text-decoration: underline;
+  background-color: #2438a5;
+  transform: scale(1.05);
 }
 
-/* 📜 Map List Items */
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-li {
-  background-color: #003366;
-  border-radius: 10px;
-  margin: 10px auto;
-  padding: 15px;
-  max-width: 600px;
+/* ===== Footer ===== */
+footer {
   text-align: center;
-  transition: transform 0.2s ease, background 0.3s ease;
+  padding: 20px;
+  margin-top: 40px;
+  background-color: #11193d;
+  color: #bbb;
+  font-size: 0.9rem;
 }
 
-li:hover {
-  background-color: #004080;
-  transform: scale(1.02);
-}
-
-/* 🖼️ Images inside list */
-li img {
-  border-radius: 10px;
-  margin-top: 10px;
-}
-
-/* 🔗 General Link Styles */
-a {
-  color: #66b3ff;
+footer a {
+  color: #88aaff;
   text-decoration: none;
 }
 
-a:hover {
+footer a:hover {
   text-decoration: underline;
-}
-
-/* 📱 Responsive Design */
-@media (max-width: 600px) {
-  .search-container input {
-    width: 90%;
-  }
-
-  li {
-    max-width: 95%;
-  }
-
-  .map-links a {
-    display: block;
-    margin: 10px 0;
-  }
 }
