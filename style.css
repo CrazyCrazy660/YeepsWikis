@@ -1,89 +1,101 @@
-/* === Base Styles === */
+/* Yeeps Hide and Seek Wiki - Style */
+
+/* 🌌 Background and Base Layout */
 body {
-  font-family: Arial, sans-serif;
+  background-color: #001f3f; /* Dark blue background */
+  color: #fff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #0d1b2a; /* dark blue background */
-  color: #e0e0e0;
-  line-height: 1.6;
 }
 
-h1, h2, h3 {
-  color: #ffffff;
-}
-
-/* === Header / Search === */
+/* 🌐 Header Search Bar */
 header {
-  background: #1b263b;
-  padding: 15px;
+  background-color: #002b5e;
+  padding: 10px;
   text-align: center;
-  border-bottom: 2px solid #415a77;
-}
-
-.search-container {
-  max-width: 500px;
-  margin: 0 auto;
+  position: sticky;
+  top: 0;
+  z-index: 10;
 }
 
 .search-container input {
-  width: 100%;
-  padding: 10px;
+  width: 80%;
+  max-width: 400px;
+  padding: 8px 12px;
   border-radius: 6px;
-  border: 1px solid #415a77;
-  background: #0d1b2a;
-  color: #fff;
+  border: none;
+  outline: none;
   font-size: 16px;
 }
 
-.search-container input:focus {
-  outline: none;
-  border-color: #00aaff;
-  box-shadow: 0 0 5px #00aaff;
+/* 🧭 Main Page Content */
+main {
+  padding: 20px;
 }
 
-/* === Map Buttons === */
-.map-button {
+/* 🧾 Headings */
+h1, h2, h3 {
+  text-align: center;
+  color: #a8d1ff;
+  margin-bottom: 10px;
+}
+
+/* 🧩 Centered Text Section */
+.centered-text {
+  text-align: center;
+}
+
+/* 🔗 Map Links (for multiple links on one line) */
+.map-links {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.map-links a {
   display: inline-block;
-  background-color: #0055aa; /* dark blue button */
-  color: white;
-  padding: 10px 20px;
-  margin: 5px 0;
-  border-radius: 6px;
+  margin: 0 15px;
+  color: #a8d1ff;
   text-decoration: none;
   font-weight: bold;
-  transition: background-color 0.2s ease, transform 0.2s ease;
+  transition: color 0.3s ease;
 }
 
-.map-button:hover {
-  background-color: #0077dd;
-  transform: scale(1.05);
+.map-links a:hover {
+  color: #66b3ff;
+  text-decoration: underline;
 }
 
-/* === Map List === */
+/* 📜 Map List Items */
 ul {
-  list-style: none;
+  list-style-type: none;
   padding: 0;
 }
 
-ul li {
-  margin: 20px 0;
+li {
+  background-color: #003366;
+  border-radius: 10px;
+  margin: 10px auto;
   padding: 15px;
-  background: #1b263b;
-  border-radius: 8px;
+  max-width: 600px;
   text-align: center;
-  border: 1px solid #415a77;
+  transition: transform 0.2s ease, background 0.3s ease;
 }
 
-ul li img {
-  max-width: 100%;
-  border-radius: 6px;
+li:hover {
+  background-color: #004080;
+  transform: scale(1.02);
+}
+
+/* 🖼️ Images inside list */
+li img {
+  border-radius: 10px;
   margin-top: 10px;
-  border: 2px solid #415a77;
 }
 
-/* === Links === */
+/* 🔗 General Link Styles */
 a {
-  color: #00aaff;
+  color: #66b3ff;
   text-decoration: none;
 }
 
@@ -91,31 +103,18 @@ a:hover {
   text-decoration: underline;
 }
 
-/* === Main Content === */
-main {
-  padding: 20px;
-  max-width: 1000px;
-  margin: auto;
-}
+/* 📱 Responsive Design */
+@media (max-width: 600px) {
+  .search-container input {
+    width: 90%;
+  }
 
-p {
-  margin-bottom: 15px;
-}
+  li {
+    max-width: 95%;
+  }
 
-/* === Back Links on Map Pages === */
-main a {
-  display: inline-block;
-  margin-top: 20px;
-  color: #00aaff;
-  font-weight: bold;
+  .map-links a {
+    display: block;
+    margin: 10px 0;
+  }
 }
-
-main a:hover {
-  color: #66ccff;
-}
-
-.container {
-      display: flex; /* Enables Flexbox layout */
-      justify-content: space-between; /* Distributes items with space in between */
-      align-items: center; /* Vertically aligns items in the center (optional) */
-    }
