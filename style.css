@@ -113,3 +113,23 @@ main a {
 main a:hover {
   color: #66ccff;
 }
+
+.map-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.map-links a {
+  text-decoration: none;
+  color: white;
+  background-color: #444;
+  padding: 8px 14px;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.map-links a:hover {
+  background-color: #666;
+}
+
