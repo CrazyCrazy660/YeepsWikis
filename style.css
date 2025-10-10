@@ -133,3 +133,9 @@ main a:hover {
   background-color: #666;
 }
 
+.center {
+  text-align: center;
+}
+.center img {
+  display: inline-block;
+}
