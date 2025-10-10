@@ -1,4 +1,4 @@
-/* === Yeeps Hide and Seek Wiki CSS === */
+/* === Yeeps Hide and Seek Wiki CSS (Updated) === */
 
 /* Global Styles */
 body {
@@ -17,9 +17,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
+  position: relative; /* header scrolls away now */
   box-shadow: 0 2px 10px rgba(0,0,0,0.3);
 }
 
