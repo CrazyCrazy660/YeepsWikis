@@ -1,4 +1,4 @@
-/* === Yeeps Hide and Seek Wiki CSS (Updated) === */
+/* === Yeeps Hide and Seek Wiki CSS (Updated for Larger Text) === */
 
 /* Global Styles */
 body {
@@ -8,6 +8,7 @@ body {
   margin: 0;
   padding: 0;
   line-height: 1.6;
+  font-size: 20px; /* doubled text size */
 }
 
 /* Header & Search Bar */
@@ -28,12 +29,12 @@ header {
 
 #siteSearch {
   width: 100%;
-  padding: 10px 15px;
+  padding: 14px 18px;
   border-radius: 8px;
   border: none;
   background-color: #1e2558;
   color: #fff;
-  font-size: 16px;
+  font-size: 20px;
   transition: 0.2s ease;
 }
 
@@ -48,7 +49,7 @@ header {
 
 /* Main Content */
 main {
-  padding: 30px;
+  padding: 40px;
   max-width: 1000px;
   margin: 0 auto;
 }
@@ -60,10 +61,20 @@ h1, h2, h3 {
   text-shadow: 0 0 5px #1b4fa3;
 }
 
+h1 {
+  font-size: 3em;
+}
+h2 {
+  font-size: 2.4em;
+}
+h3 {
+  font-size: 1.8em;
+}
+
 /* Paragraphs & Lists */
 p {
   text-align: center;
-  font-size: 18px;
+  font-size: 1.2em;
   margin-bottom: 20px;
 }
 
@@ -74,10 +85,11 @@ ul {
 
 li {
   background-color: #1a1f46;
-  margin: 15px 0;
-  padding: 15px;
+  margin: 20px 0;
+  padding: 25px;
   border-radius: 10px;
   transition: background 0.2s ease;
+  font-size: 1.1em;
 }
 
 li:hover {
@@ -87,7 +99,7 @@ li:hover {
 /* Images */
 img {
   display: block;
-  margin: 15px auto;
+  margin: 20px auto;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0,0,0,0.4);
   max-width: 100%;
@@ -99,11 +111,12 @@ a, button {
   background-color: #283178;
   color: #fff;
   text-decoration: none;
-  padding: 10px 18px;
+  padding: 14px 22px;
   border-radius: 8px;
   display: inline-block;
-  margin: 8px;
+  margin: 10px;
   transition: 0.2s ease;
+  font-size: 1.1em;
 }
 
 a:hover, button:hover {
@@ -114,8 +127,8 @@ a:hover, button:hover {
 /* Footer */
 footer {
   text-align: center;
-  padding: 15px;
-  font-size: 14px;
+  padding: 20px;
+  font-size: 0.9em;
   color: #999;
   margin-top: 40px;
 }
@@ -123,16 +136,20 @@ footer {
 /* Responsive */
 @media (max-width: 600px) {
   main {
-    padding: 15px;
+    padding: 20px;
   }
 
   #siteSearch {
-    font-size: 14px;
-    padding: 8px 10px;
+    font-size: 18px;
+    padding: 10px 12px;
   }
 
   a, button {
-    padding: 8px 14px;
-    font-size: 14px;
+    padding: 10px 18px;
+    font-size: 1em;
+  }
+
+  li {
+    font-size: 1em;
   }
 }
